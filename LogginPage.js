@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
 import {
   View,
   Text,
@@ -12,14 +11,6 @@ import {
 import { ScaledSheet } from "react-native-size-matters";
 import { useFonts, Inter_600SemiBold } from "@expo-google-fonts/inter";
 import Animated, { FadeInUp, FadeInDown } from "react-native-reanimated";
-=======
-import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
-import { ScaledSheet } from "react-native-size-matters";
-import { useFonts, Inter_600SemiBold } from "@expo-google-fonts/inter";
-import Animated, { FadeInUp, FadeInDown } from "react-native-reanimated";
-import { SafeAreaView } from "react-native-safe-area-context";
-
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
 export default function LoginPage({ navigation }) {
   let [fontsLoaded] = useFonts({ Inter_600SemiBold });
   const [username, setUsername] = useState("");
@@ -27,11 +18,7 @@ export default function LoginPage({ navigation }) {
 
   const handleLogin = () => {
     // Perform login validation here
-<<<<<<< HEAD
     if (username === "" && password === "") {
-=======
-    if (username === "123" && password === "123") {
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
       // If username and password are correct, navigate to the home screen
       navigation.navigate("Home");
     } else {
@@ -45,15 +32,11 @@ export default function LoginPage({ navigation }) {
   }
 
   return (
-<<<<<<< HEAD
     <SafeAreaView
       contentInsetAdjustmentBehavior="automatic"
       style={styles.container}
     >
       <StatusBar style="light" backgroundColor="#0A3832" />
-=======
-    <SafeAreaView style={styles.container}>
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
       <View style={styles.top}>
         <Animated.Image
           entering={FadeInUp.delay(100).duration(100).springify()}
@@ -69,11 +52,7 @@ export default function LoginPage({ navigation }) {
           Login Screen
         </Animated.Text>
         <Animated.View
-<<<<<<< HEAD
           entering={FadeInDown.delay(300).duration(100).springify()}
-=======
-          entering={FadeInDown.delay(250).duration(100).springify()}
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
           style={styles.Input}
         >
           <TextInput
@@ -93,11 +72,7 @@ export default function LoginPage({ navigation }) {
           />
         </Animated.View>
         <Animated.View
-<<<<<<< HEAD
           entering={FadeInDown.delay(400).duration(100).springify()}
-=======
-          entering={FadeInDown.delay(250).duration(100).springify()}
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
           style={styles.btnView}
         >
           <TouchableOpacity style={styles.btn} onPress={handleLogin}>

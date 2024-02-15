@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
   StyleSheet,
   Text,
@@ -11,11 +10,6 @@ import {
 } from "react-native";
 import React, { useState, useEffect } from "react";
 
-=======
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
-import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
 import {
   Feather,
   MaterialCommunityIcons,
@@ -31,7 +25,6 @@ import {
   Inter_400Regular,
 } from "@expo-google-fonts/inter";
 import { ScaledSheet } from "react-native-size-matters";
-<<<<<<< HEAD
 import Animated, { FadeInUp, FadeInDown } from "react-native-reanimated";
 import { ref, onValue } from "firebase/database";
 import { db } from "./config";
@@ -104,15 +97,6 @@ export default function Home() {
     });
   }, []);
 
-=======
-import Animated, {
-  FadeInUp,
-  FadeInDown,
-  FadeIn,
-} from "react-native-reanimated";
-
-export default function Home() {
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
   let [fontsLoaded] = useFonts({
     Inter_600SemiBold,
     Inter_300Light,
@@ -124,7 +108,6 @@ export default function Home() {
     return null; // Render nothing until fonts are loaded
   }
   return (
-<<<<<<< HEAD
     <SafeAreaView
       style={styles.container1}
       contentInsetAdjustmentBehavior="automatic"
@@ -297,147 +280,17 @@ export default function Home() {
             </Animated.View>
           </ScrollView>
         </View>
-=======
-    <SafeAreaView style={styles.container}>
-      <View style={styles.Top}>
-        <Image
-          source={require("./assets/topbackground.png")}
-          style={styles.imageBk}
-        />
-        <View style={styles.TopLeft}>
-          <View style={styles.TopLeftTop}>
-            <Text style={styles.headLeftText}>Hello,</Text>
-            <Text style={styles.headRightText}> Farmer</Text>
-          </View>
-          <Animated.View
-            entering={FadeIn.delay(100).duration(200)}
-            style={styles.TopLeftBottom}
-          >
-            <Text style={styles.NameText}>Green House</Text>
-            <Text style={styles.AddressText}>
-              Galenbidunu wawe , Anuradhapura
-            </Text>
-            <Text style={styles.AddressText}>200ha X 200ha</Text>
-          </Animated.View>
-        </View>
-        <View style={styles.TopRight}>
-          <View style={styles.ImageView}>
-            <Image source={require("./assets/map.png")} style={styles.image} />
-          </View>
-        </View>
-      </View>
-      <Animated.View
-        entering={FadeIn.delay(150).duration(200)}
-        style={styles.Middle}
-      >
-        <View style={styles.Box}>
-          <View style={styles.BoxTop}>
-            <View style={styles.BoxSun}>
-              <Feather
-                name="sun"
-                size={29}
-                color="#189877"
-                style={styles.icon}
-              />
-              <Text style={styles.Text1}>Sun light</Text>
-              <Text style={styles.Text2}>High</Text>
-            </View>
-            <View style={styles.BoxHum}>
-              <MaterialCommunityIcons
-                name="water-outline"
-                size={29}
-                color="#189877"
-                style={styles.icon}
-              />
-              <Text style={styles.Text1}>Humidty</Text>
-              <Text style={styles.Text2}>10%</Text>
-            </View>
-            <View style={styles.BoxTem}>
-              <FontAwesome6
-                name="temperature-quarter"
-                size={29}
-                color="#189877"
-                style={styles.icon}
-              />
-              <Text style={styles.Text1}>Temperature</Text>
-              <Text style={styles.Text2}>24°C</Text>
-            </View>
-          </View>
-          <View style={styles.BoxBottom}>
-            <View style={styles.BoxSun}>
-              <MaterialIcons
-                name="water"
-                size={29}
-                color="#189877"
-                style={styles.icon}
-              />
-              <Text style={styles.Text1}>Soil Moisture</Text>
-              <Text style={styles.Text2}>High</Text>
-            </View>
-            <View style={styles.BoxHum}>
-              <MaterialCommunityIcons
-                her
-                name="test-tube"
-                size={29}
-                color="#189877"
-                style={styles.icon}
-              />
-              <Text style={styles.Text1}>PH Value</Text>
-              <Text style={styles.Text2}>6.5</Text>
-            </View>
-          </View>
-        </View>
-      </Animated.View>
-      <View style={styles.Bottom}>
-        <Animated.Text
-          entering={FadeIn.delay(200).duration(200)}
-          style={styles.BottomText}
-        >
-          Analysis
-        </Animated.Text>
-        <ScrollView
-          contentContainerStyle={styles.scroll}
-          showsVerticalScrollIndicator={false}
-        >
-          <Animated.View
-            entering={FadeIn.delay(100).duration(200)}
-            style={styles.Box2}
-          >
-            <Text style={styles.Box2Text}>
-              Sun Light, Humidity, Temperature
-            </Text>
-            <Image
-              source={require("./assets/chart1.png")}
-              style={styles.imageChart1}
-            />
-          </Animated.View>
-          <Animated.View
-            entering={FadeIn.delay(250).duration(200)}
-            style={styles.Box2}
-          >
-            <Text style={styles.Box2Text}>Soil Moisture, ph Value</Text>
-            <Image
-              source={require("./assets/chart2.png")}
-              style={styles.imageChart2}
-            />
-          </Animated.View>
-        </ScrollView>
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
       </View>
     </SafeAreaView>
   );
 }
 
 const styles = ScaledSheet.create({
-<<<<<<< HEAD
   container1: {
     flex: 1,
   },
   container: {
     paddingTop: 20,
-=======
-  container: {
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
     // backgroundColor: "#0A3832",
     flex: 1,
   },
@@ -537,11 +390,7 @@ const styles = ScaledSheet.create({
   },
 
   Box: {
-<<<<<<< HEAD
     height: "95%",
-=======
-    height: "90%",
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
     width: "90%",
     elevation: 20,
     backgroundColor: "#FFFFFF",
@@ -588,10 +437,7 @@ const styles = ScaledSheet.create({
     color: "#DBDCE2",
     fontSize: "17@mvs",
     fontFamily: "Inter_500Medium",
-<<<<<<< HEAD
     marginBottom: -4,
-=======
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
   },
 
   Text2: {

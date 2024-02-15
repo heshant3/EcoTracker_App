@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -27,16 +25,10 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font"
-    ],
+    "plugins": ["expo-font"],
     "extra": {
       "eas": {
-<<<<<<< HEAD
         "projectId": "708c80c1-458d-4fa9-8225-8be716fce93e"
-=======
-        "projectId": "c3a5b199-ede4-4081-9250-15b4e4a96bb9"
->>>>>>> 9bcba4d73d52d47f0e7fa55b72c9ec89d5284223
       }
     }
   }
