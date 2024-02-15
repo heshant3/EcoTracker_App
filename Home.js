@@ -238,7 +238,9 @@ export default function Home() {
                   <ActivityIndicator size="small" color="#0A3832" />
                 ) : (
                   <>
-                    <Text style={styles.Text2}>{PHLevel}</Text>
+                    <Text style={styles.Text2}>
+                      {PHLevel ? PHLevel.toFixed(1) : "0.00"}
+                    </Text>
                   </>
                 )}
               </View>

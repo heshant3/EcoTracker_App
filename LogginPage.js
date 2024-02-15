@@ -18,7 +18,7 @@ export default function LoginPage({ navigation }) {
 
   const handleLogin = () => {
     // Perform login validation here
-    if (username === "" && password === "") {
+    if (username === "Admin" && password === "123") {
       // If username and password are correct, navigate to the home screen
       navigation.navigate("Home");
     } else {

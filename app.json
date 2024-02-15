@@ -17,8 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/adaptive-icon.png"
       },
       "package": "com.heshant3.EcoTracker"
     },
@@ -28,7 +27,7 @@
     "plugins": ["expo-font"],
     "extra": {
       "eas": {
-        "projectId": "708c80c1-458d-4fa9-8225-8be716fce93e"
+        "projectId": "1c77e5c5-7f7c-4079-a4b9-1060568bd332"
       }
     }
   }
