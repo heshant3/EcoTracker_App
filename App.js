@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text } from "react-native";
+import React, { useEffect, useState } from "react";
+import Nav from "./Nav";
+import Home from "./Home";
+import NetInfo from "@react-native-community/netinfo";
+import * as SplashScreen from "expo-splash-screen";
+import No_internet from "./No_internet";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [isConnected, setIsConnected] = useState(true);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  useEffect(() => {
+    // Subscribe to network state changes
+    const unsubscribe = NetInfo.addEventListener((state) => {
+      setIsConnected(state.isConnected);
+    });
+
+    // Hide splash screen after 2 seconds
+    setTimeout(() => {
+      SplashScreen.hideAsync();
+    }, 2000);
+
+    // Unsubscribe when the component unmounts
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+
+  return isConnected ? <Nav /> : <No_internet />;
+}

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "EcoTracker",
+    "name": "Eco Tracker",
     "slug": "EcoTracker",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.heshant3.EcoTracker"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "708c80c1-458d-4fa9-8225-8be716fce93e"
+      }
     }
   }
 }
