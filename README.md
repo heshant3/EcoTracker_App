@@ -10,3 +10,6 @@ Key Features:
 2. Weekly Analysis Report: Receive comprehensive weekly analysis reports detailing trends and fluctuations in environmental factors. Gain insights into how your greenhouse conditions change over time and make informed decisions to optimize plant growth and health.
 
 Eco Tracker empowers greenhouse enthusiasts and professionals alike to cultivate thriving environments for their plants. Join us on GitHub to explore our codebase and contribute to sustainable agriculture practices!"
+
+![screen](https://github.com/heshant3/EcoTracker_App/assets/55088720/554014eb-c485-47e0-9d7b-926ed98d7add)
+
