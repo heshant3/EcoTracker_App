@@ -28,6 +28,7 @@ import { ScaledSheet } from "react-native-size-matters";
 import Animated, { FadeInUp, FadeInDown } from "react-native-reanimated";
 import { ref, onValue } from "firebase/database";
 import { db } from "./config";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Home() {
   const [Humidity, setHumidity] = useState(null);
@@ -134,7 +135,7 @@ export default function Home() {
             >
               <Text style={styles.NameText}>Green House</Text>
               <Text style={styles.AddressText}>
-                Galenbidunu wawe , Anuradhapura
+                Galenbidunuwawe , Anuradhapura
               </Text>
               <Text style={styles.AddressText}>200ha X 200ha</Text>
             </Animated.View>
@@ -357,9 +358,10 @@ const styles = ScaledSheet.create({
   },
 
   image: {
-    width: 150,
-    height: 150,
-    resizeMode: "contain",
+    alignSelf: "center",
+    width: 130,
+    height: 130,
+    // resizeMode: "cover",
   },
 
   headLeftText: {
